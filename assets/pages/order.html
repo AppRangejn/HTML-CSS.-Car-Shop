@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення автомобіля | Luxury Cars</title>
+    <link rel="shortcut icon" href="../icons/free-icon-car-transporter-18366050.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Оформлення замовлення</h1>
+    </header>
+
+    <main>
+        <div class="order-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Ваше Ім'я</label>
+                    <input type="text" name="user_name" placeholder="Олександр">
+                </div>
+
+                <div class="form-group">
+                    <label for="car">Оберіть автомобіль</label>
+                    <select name="car_model">
+                        <option value="mustang">Ford Mustang GT</option>
+                        <option value="camry">Toyota Camry</option>
+                        <option value="lc300">Toyota Land Cruiser 300</option>
+                        <option value="m5f90">BMW M5 F90 CS</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Колір</label>
+                    <input type="color" name="car_color" value="#0066bf">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Бажана дата тест-драйву</label>
+                    <input type="date" name="drive_date">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Додаткові побажання</label>
+                    <textarea name="user_message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Замовити</button>
+            </form>
+            <a href="../../index.html" class="back-link">← Повернутися до каталогу</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -11,44 +11,126 @@
     <header>
         <h1>Оформлення замовлення</h1>
     </header>
+<div class="backcolortable">
+<main>
+    <form>
+        <div class="form-wrapper">
+        <fieldset>
+            <legend>Personal info</legend>
 
-    <main>
-        <div class="order-form">
-            <form>
-                <div class="form-group">
-                    <label for="name">Ваше Ім'я</label>
-                    <input type="text" name="user_name" placeholder="Олександр">
+            <div>
+                <label>First Name <input type="text" name="first_name"></label>
+            </div>
+
+            <div>
+                <label>Last Name <input type="text" name="last_name"></label>
+            </div>
+
+            <div>
+                <label>Birthday <input type="datetime-local" name="birthday"></label>
+            </div>
+
+            <div class="gender-group">
+                <span>Gender</span>
+                <div>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
                 </div>
+            </div>
 
-                <div class="form-group">
-                    <label for="car">Оберіть автомобіль</label>
-                    <select name="car_model">
-                        <option value="mustang">Ford Mustang GT</option>
-                        <option value="camry">Toyota Camry</option>
-                        <option value="lc300">Toyota Land Cruiser 300</option>
-                        <option value="m5f90">BMW M5 F90 CS</option>
+            <div>
+                <label>Drive experience
+                    <select name="experience">
+                        <option value="">---</option>
+                        <option value="1">1 year</option>
+                        <option value="3">3 years</option>
+                        <option value="5">5+ years</option>
                     </select>
-                </div>
+                </label>
+            </div>
+        </fieldset>
 
-                <div class="form-group">
-                    <label for="color">Колір</label>
-                    <input type="color" name="car_color" value="#0066bf">
-                </div>
+        <fieldset>
+            <legend>Contacts</legend>
 
-                <div class="form-group">
-                    <label for="date">Бажана дата тест-драйву</label>
-                    <input type="date" name="drive_date">
-                </div>
+            <div>
+                <label>Email <input type="email" name="email"></label>
+            </div>
 
-                <div class="form-group">
-                    <label for="message">Додаткові побажання</label>
-                    <textarea name="user_message" rows="4"></textarea>
-                </div>
+            <div>
+                <label>Phone <input type="tel" name="phone"></label>
+            </div>
 
-                <button type="submit" class="submit-btn">Замовити</button>
-            </form>
-            <a href="../../index.html" class="back-link">← Повернутися до каталогу</a>
+            <div>
+                <label>Address <textarea name="address" rows="5"></textarea></label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Car info</legend>
+
+            <div>
+                <label>Brand
+                    <select name="brand">
+                        <option value="">---</option>
+                        <option value="ford">Ford</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="bmw">BMW</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <label>Model
+                    <select name="model">
+                        <option value="">---</option>
+                        <option value="mustang">Mustang GT</option>
+                        <option value="camry">Camry</option>
+                        <option value="m5">M5 F90</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <label><input type="checkbox" name="used"> Used</label>
+            </div>
+
+            <div class="color-group">
+                <span>Color</span>
+                <div>
+                <label><input type="radio" name="color" value="red"> Red</label>
+                <label><input type="radio" name="color" value="black"> Black</label>
+                <label><input type="radio" name="color" value="blue"> Blue</label>
+                <label><input type="radio" name="color" value="white"> White</label>
+                <label><input type="radio" name="color" value="grey"> Grey</label>
+                </div>
+            </div>
+
+            <div>
+                <label>Price 
+                    <input type="range" name="price" min="0" max="100000" list="price-ticks">
+                    <datalist id="price-ticks">
+                        <option value="0"></option>
+                        <option value="12500"></option>
+                        <option value="25000"></option>
+                        <option value="37500"></option>
+                        <option value="50000"></option>
+                        <option value="62500"></option>
+                        <option value="75000"></option>
+                        <option value="87500"></option>
+                        <option value="100000"></option>
+                    </datalist>
+                </label>
+            </div>
+        </fieldset>
         </div>
-    </main>
+        <div>
+            <button type="reset">Cancel</button>
+            <button type="submit">Ok</button>
+        </div>
+    </form>
+    <a href="../../index.html">Повернутися до каталогу</a>
+</main>
+</div>
 </body>
 </html>

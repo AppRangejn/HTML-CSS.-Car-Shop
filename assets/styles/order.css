@@ -1,0 +1,85 @@
+.form-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.form-columns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+legend {
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.input-group label {
+    width: 130px; 
+}
+
+input[type="text"], 
+input[type="datetime-local"], 
+input[type="email"], 
+input[type="tel"], 
+select, 
+textarea {
+    width: 170px;
+    border: 1px solid gray;
+    padding: 2px;
+}
+
+textarea {
+    height: 50px;
+}
+
+.color-row {
+    display: flex;
+    margin: 15px 0;
+}
+
+.price-section {
+    width: 220px;
+    margin-top: 10px;
+}
+
+.price-section input[type="range"] {
+    width: 100%;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.form-buttons button {
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 6px 35px;
+    font-size: 22px;
+    box-shadow: 1px 1px 0px black;
+}

@@ -8,35 +8,36 @@
     <link rel="stylesheet" href="../styles/order.css">
 </head>
 <body>
-<div class="order-page-wrapper">
     <h1 class="form-title">Home work for CSS flexbox</h1>
     
-    <form class="main-form">
+    <form>
         <div class="form-columns">
             <fieldset>
                 <legend>Personal info</legend>
                 <div class="input-group">
-                    <label>First Name</label>
-                    <input type="text" name="fname">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname">
                 </div>
                 <div class="input-group">
-                    <label>Last Name</label>
-                    <input type="text" name="lname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname">
                 </div>
                 <div class="input-group">
-                    <label>Birthday</label>
-                    <input type="datetime-local">
+                    <label for="birthday">Birthday</label>
+                    <input type="datetime-local" id="birthday">
                 </div>
                 <div class="input-group">
                     <label>Gender</label>
                     <div class="radio-row">
-                        <span>Male</span> <input type="radio" name="gender">
-                        <span>Female</span> <input type="radio" name="gender" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" checked>
                     </div>
                 </div>
                 <div class="input-group">
-                    <label>Drive experience</label>
-                    <select>
+                    <label for="experience">Drive experience</label>
+                    <select id="experience">
                         <option>---</option>
                         <option>expert</option>
                         <option>more than 10</option>
@@ -51,58 +52,53 @@
             <fieldset>
                 <legend>Contacts</legend>
                 <div class="input-group">
-                    <label>Email</label>
-                    <input type="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
                 </div>
                 <div class="input-group">
-                    <label>Phone</label>
-                    <input type="tel">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone">
                 </div>
                 <div class="input-group">
-                    <label>Address</label>
-                    <textarea></textarea>
+                    <label for="address">Address</label>
+                    <textarea id="address"></textarea>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Car info</legend>
                 <div class="input-group">
-                    <label>Brand</label>
-                    <select><option>---</option></select>
+                    <label for="brand">Brand</label>
+                    <select id="brand"><option>---</option></select>
                 </div>
                 <div class="input-group">
-                    <label>Model</label>
-                    <select><option>---</option></select>
+                    <label for="model">Model</label>
+                    <select id="model"><option>---</option></select>
                 </div>
                 <div class="input-group">
-                    <label>Used</label>
-                    <input type="checkbox" class="chk-left">
+                    <label for="used">Used</label>
+                    <input type="checkbox" id="used">
                 </div>
                 <div class="color-row">
-                    <label>Red <input type="radio" name="c"></label>
-                    <label>Black <input type="radio" name="c"></label>
-                    <label>Blue <input type="radio" name="c"></label>
-                    <label>White <input type="radio" name="c"></label>
-                    <label>Grey <input type="radio" name="c"></label>
+                    <label><input type="radio" name="c"> Red</label>
+                    <label><input type="radio" name="c"> Black</label>
+                    <label><input type="radio" name="c"> Blue</label>
+                    <label><input type="radio" name="c"> White</label>
+                    <label><input type="radio" name="c"> Grey</label>
                 </div>
                 <div class="price-section">
-                    <label>Price</label>
-                    <div class="range-wrapper">
-                        <input type="range" name="price" min="10" max="80" step="10" list="tickmarks">
-                        <datalist id="tickmarks">
-                            <option value="10"></option>
-                            <option value="20"></option>
-                            <option value="30"></option>
-                            <option value="40"></option>
-                            <option value="50"></option>
-                            <option value="60"></option>
-                            <option value="70"></option>
-                            <option value="80"></option>
-                        </datalist>
-                    </div>
-                    <div class="range-labels">
-                        <span>10</span><span>20</span><span>30</span><span>40</span><span>50</span><span>60</span><span>70</span><span>80</span>
-                    </div>
+                    <label for="price">Price</label>
+                    <input type="range" id="price" min="10" max="80" step="10" list="tickmarks">
+                    <datalist id="tickmarks">
+                        <option value="10" label="10"></option>
+                        <option value="20" label="20"></option>
+                        <option value="30" label="30"></option>
+                        <option value="40" label="40"></option>
+                        <option value="50" label="50"></option>
+                        <option value="60" label="60"></option>
+                        <option value="70" label="70"></option>
+                        <option value="80" label="80"></option>
+                    </datalist>
                 </div>
             </fieldset>
         </div>
@@ -112,6 +108,5 @@
             <button type="submit">Ok</button>
         </div>
     </form>
-</div>
 </body>
 </html>

@@ -1,10 +1,9 @@
-
-
 body {
     background-color: #000000;
     color: #f2f2f2;
     line-height: 1.6;
     scroll-behavior: smooth;
+    margin: 0;
 }
 
 header {
@@ -13,8 +12,8 @@ header {
     border-bottom: 4px solid blue;
 }
 
-header img[alt="logo"] {
-    max-width: 300px;
+.header-logo {
+    width: 400px;
     margin-bottom: 25px;
 }
 
@@ -28,6 +27,8 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 25px;
+    list-style: none; 
+    padding: 0;
 }
 
 nav a {
@@ -61,9 +62,10 @@ article h2 {
     border-bottom: 1px solid darkgray;
 }
 
-article img[alt="logo"] {
+.brand-logo {
     display: block;
     margin: 25px 0;
+    width: 300px;
 }
 
 h3 {
@@ -76,7 +78,6 @@ article ul li {
     padding-left: 20px;
     margin-bottom: 15px;
 }
-
 
 main > p > a {
     color: #666666;
@@ -99,9 +100,13 @@ main > p > a:hover {
     border-left: 1px solid blue;
 }
 
-.avatar1 img, .avatar2 img {
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     border: 2px solid blue;
     padding: 3px;
+    object-fit: cover;
 }
 
 .avatar1 h4, .avatar2 h4 {
@@ -120,7 +125,7 @@ main > p > a:hover {
     font-weight: 900;
 }
 
-.backcolortable{
+.back-color-table {
     padding: 50px;
     background-color: white;
     border-radius: 30px;
@@ -153,10 +158,10 @@ th {
     font-weight: bold;
     border: 3px solid #008080;
     text-transform: none;
+    padding: 10px;
 }
 
 td {
-
     text-align: center;
     border: 3px solid #008080;
     font-weight: bold;
@@ -164,6 +169,7 @@ td {
     background-color: white;
     color: black;
     text-transform: none;
+    padding: 10px;
 }
 
 tr:hover {
